@@ -1,0 +1,27 @@
+.detail_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.info {
+    text-align: start;
+}
+.info_p {
+    margin-bottom: 40px;
+}
+.img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+}

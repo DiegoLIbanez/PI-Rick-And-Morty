@@ -1,0 +1,63 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    width: 94%;
+    padding: 1.5rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.nav_link{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+}
+.nav_a {
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buscador_input {
+    background: silver;
+    border: 1px solid #393939;
+    border-radius: 5px 5px 5px 5px;
+    color: #393939;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.boton {
+    background-color: #4e4caf; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: #545387;
+    color: #fff;
+}
