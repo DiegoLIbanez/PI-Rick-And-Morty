@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Card from "../Card/Card";
 import style from "./Cards.module.css";
 
-const Cards = ({ characters, onClose }) => {
+const Cards = ({ closeCard }) => {
+
+  const characters = useSelector(state => state.characters)
+
   return (
     <>
       <h1 className={style.titulo}>Mostrar Personaje de Rick and Morty</h1>
@@ -19,7 +23,7 @@ const Cards = ({ characters, onClose }) => {
                 gender={gender}
                 image={image}
                 origin={origin}
-                onClose={onClose}
+                closeCard={closeCard}
               />
             );
           }

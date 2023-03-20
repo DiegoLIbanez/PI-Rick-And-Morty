@@ -1,10 +1,10 @@
 import React from 'react'
 import SearchBar from '../SearchBar/SearchBar'
 
-const Nav = ({onSearch}) => {
+const Nav = ({searchCharacter}) => {
   return (
     <div>
-        <SearchBar onSearch={onSearch}/>
+        <SearchBar searchCharacter={searchCharacter}/>
     </div>
   )
 }

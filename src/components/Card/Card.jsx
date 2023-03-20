@@ -1,12 +1,11 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import style from './Card.module.css'
 
-const Card = ({id, name, species, gender, image, origin, status, onClose}) => {
-
+const Card = ({id, name, species, gender, image, origin, status, closeCard}) => {
     return (
       <div className={style.Card}>
-   
         <div>
             <img className={style.Card_img} src={image} alt=""/>
         </div>
@@ -16,7 +15,7 @@ const Card = ({id, name, species, gender, image, origin, status, onClose}) => {
             <p><b>Especie:</b> {species}</p>
             <p><b>Genero:</b>{gender}</p>
             <p><b>Origen:</b> {origin.name}</p>
-            <button onClick={() => onClose(id)}>X</button>
+            <button onClick={() => closeCard(id)}>X</button>
         </div>
     </div>
   )
